@@ -1,4 +1,4 @@
-import { Text, View, Image, TextInput } from 'react-native';
+import { Text, View, Image, TextInput, ToastAndroid } from 'react-native';
 import { FontAwesome, MaterialIcons }  from '@expo/vector-icons';
 import { RoundedButton } from '@/components/roundedButton';
 import { styles } from "./styles";
@@ -40,7 +40,7 @@ export default function App() {
         </View>
 
         <View style={{ marginTop: 30 }}>
-          <RoundedButton text='Login' />
+          <RoundedButton text='Login' onPress={() => ToastAndroid.show("Olá",ToastAndroid.SHORT)} />
         </View>
 
         <View style={styles.formRegister}>
